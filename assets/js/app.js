@@ -2,20 +2,7 @@ $(document).ready(function () {
 
     new WOW().init();
 
-    // Paralax effect
-    //    $(window).scroll(function () {
-    //        var wScroll = $(this).scrollTop();
-    //        $('.parallax').css({
-    //            'transform': 'translate(0px, ' + wScroll / 1.5 + 'px)'
-    //        });
-    //        $('.header-main').css({
-    //            'transform': 'translate(0px, ' + wScroll / 1.5 + 'px)'
-    //        });
-    //
-    //    });
-
-
-    ////// NavBar
+//////////    Navigation Bar ///////////////////////
     var MQL = 1170;
     //primary navigation slide-in effect
     if ($(window).width() > MQL) {
@@ -42,7 +29,7 @@ $(document).ready(function () {
             });
     }
 
-    //open/close primary navigation
+    ////// open/close primary navigation //// 
     $('.cd-primary-nav-trigger').on('click', function () {
         $('.cd-menu-icon').toggleClass('is-clicked');
         $('.cd-header').toggleClass('menu-is-open');
@@ -58,28 +45,25 @@ $(document).ready(function () {
             });
         }
     });
-
-
     $(".close").click(function () {
         $('.cd-menu-icon').toggleClass('is-clicked');
         $('.cd-header').toggleClass('menu-is-open');
         $('.cd-primary-nav').removeClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
             $('body').removeClass('overflow-hidden');
         });
-
     });
 
 
-    //    $(function() {
-    //  
-    //  
-    //  function loop(){
-    //   $('.bottom')
-    //     .animate({top:-20},1000)
-    //     .animate({top:-10},1000, loop);
-    //  }
+        $(function() {
+      
+      
+      function loop(){
+       $('.bottom')
+         .animate({top:-20},1000)
+         .animate({top:-10},1000, loop);
+      }
 
-    loop(); // call this wherever you want
+    loop();
 
 
 });
@@ -101,8 +85,6 @@ $('a[href^="#"]').on('click', function (e) {
 
 
 // swipe scrollmagic
-
-
 var controller = new ScrollMagic.Controller();
 
 new ScrollMagic.Scene({
@@ -165,18 +147,11 @@ $('#return-to-top').click(function () { // When arrow is clicked
 });
 
 
-
 ////// check if it is safari
 var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-
-
 if (isSafari) {
     $("#mobile-showcase").removeClass("hide-mobile");
     $("#website-showcase").addClass("delete");
-
 };
-
-
-
 });
