@@ -1,3 +1,11 @@
+/* spaces - 2 */
+/* 
+   - zacni pouzivat sass - scss
+   - rozdelis si tak soubory na css/base/main_elements|colors|, css/helpers/layout, css/components, css/layout napr.
+     a pak to hezky vse importujes do main a mas v tom prehled. Ruzne margins a fz pak budes mit jako variable a zmenis
+     na jednom miste, ne na 100 ruznych mistech v css
+*/
+
 /* =============================================================================
    My CSS
    ========================================================================== */
