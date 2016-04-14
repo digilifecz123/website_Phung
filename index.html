@@ -1,3 +1,7 @@
+<!--
+    1. zmenil bych tab spaces ze 4 na 2. Tvuj kod bude daleko citelnejsi
+-->
+
 <!DOCTYPE html>
 <html>
 
@@ -5,6 +9,10 @@
     <title>My personal webste</title>
     <meta charset="utf-8">
     <meta content="width=device-width" name="viewport">
+    <!-- 
+        pouzivas nekolik requestu, ktere browser posila, aby dostal cssKa. Lepsi je pouzit grunt ci bower
+        a spojit a minifikovat tyto soubory. Jinak +1 za normalize : )
+    -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" rel="stylesheet" type="text/css">
@@ -30,6 +38,11 @@
             <!-- cd-primary-nav-trigger -->
         </div>
         <div class="wrapper">
+            <!--
+                flex je nejspise helper classa, v tom pripade by si mel vice specifikovat o jaky flex
+                tady vlastne jde. napr. flex-jcenter-acenter, j=justify-content, a=align-items,
+                kdyz uz chces pouzit abstrakni nazev
+            -->
             <div class="main flex">
                 <div class=" header-main">
                     <h2 class="a2 en">Hi, I am <span class="bold">Tuan Phung</span> a self-taught</h2>
@@ -204,6 +217,7 @@
     </section>
     <!-- Start GITHUB section -->
     <section id="github">
+        <!-- delka > 80znaku - rozdelit tag -->
         <a href="https://github.com/digilifecz123" target="_blank"><img alt="github" src="assets/images/github-logo-white.png"></a>
     </section>
 
@@ -242,6 +256,7 @@
                 </div>
             </div>
             <form class="wow fadeIn" data-wow-delay="2.1s">
+                <!-- delka > 80znaku - rozdelit tag -->
                 <button target="_blank" formaction="https://www.instagram.com/tuananh94">Follow my instagram &nbsp; <i class="fa fa-instagram" aria-hidden="true"></i></button>
             </form>
         </div>
@@ -320,6 +335,10 @@
         </footer>
     </div>
     <!-- Start BUTTON-BACK-TO-TOP section -->
+    <!-- 
+        to same jako s css - spojit do jednoho souboru, plus script tag  nemusis mit nikde zanoreny
+        zkratka umistit pred body
+    -->
     <div class="return-top">
         <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up fa-2x"></i></a>
         <!--        <script src="assets/js/jquery-2.1.1.js"> </script>-->
